@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e2c2282-434a-4470-b416-3f969a905b03" name="Changes" comment="убрал бд добавленную вручную, читаю документацию по использованию models">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0002_remove_mymodelname_id_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0003_rename_mymodelname_books.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0004_alter_books_uid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0005_alter_books_pubdate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="8e2c2282-434a-4470-b416-3f969a905b03" name="Changes" comment="настроил примерную табличку books и добавил туда запись">
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0006_author_book_bookinstance_genre_delete_books_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad0dd796-2db4-4361-af69-84552bb9d703.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad0dd796-2db4-4361-af69-84552bb9d703.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
@@ -63,7 +58,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.customizations"
+    "settings.editor.selected.configurable": "preferences.keymap"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -138,7 +133,7 @@
       <updated>1669577444233</updated>
       <workItem from="1669577469435" duration="1703000" />
       <workItem from="1669598463888" duration="9629000" />
-      <workItem from="1669705992226" duration="3800000" />
+      <workItem from="1669705992226" duration="5738000" />
     </task>
     <task id="LOCAL-00001" summary="ll">
       <created>1669577533976</created>
@@ -189,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669714690682</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="настроил примерную табличку books и добавил туда запись">
+      <created>1669717109175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669717109175</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +229,8 @@
     <MESSAGE value="делаю библиотеку по методичке, сначала настраиваем редирект на catalog" />
     <MESSAGE value="редирект теперь работает, также на сайт можно зайти через локальную сеть" />
     <MESSAGE value="убрал бд добавленную вручную, читаю документацию по использованию models" />
-    <option name="LAST_COMMIT_MESSAGE" value="убрал бд добавленную вручную, читаю документацию по использованию models" />
+    <MESSAGE value="настроил примерную табличку books и добавил туда запись" />
+    <option name="LAST_COMMIT_MESSAGE" value="настроил примерную табличку books и добавил туда запись" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/django_project$manage.coverage" NAME="manage Coverage Results" MODIFIED="1669615690053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
