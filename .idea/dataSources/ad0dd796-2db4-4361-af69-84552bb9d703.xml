@@ -1801,8 +1801,8 @@ genre_id</ColNames>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="595" parent="493" name="language_name">
-      <DataType>varchar(2)|0s</DataType>
+    <column id="595" parent="493" name="name">
+      <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>

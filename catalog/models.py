@@ -74,30 +74,30 @@ class BookInstance(models.Model):
 
 class Language(models.Model):
     """MODEL FOR LANGUAGE SAMODELKA"""
-    lang_selector = (
-        ('ru', 'Russian'),
-        ('en', 'English'),
-        ('fa', 'Farsi'),
-        ('fr', 'French'),
-        ('ua', 'Ukrainian'),
-    )
-    # https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
-
-    language_name = models.CharField(
-        max_length=2,
-        choices=lang_selector,
-        blank=True,
-        default='ru',
-        help_text='Book language',
-    )
+    # lang_selector = (
+    #     ('ru', 'Russian'),
+    #     ('en', 'English'),
+    #     ('fa', 'Farsi'),
+    #     ('fr', 'French'),
+    #     ('ua', 'Ukrainian'),
+    # )
+    # # https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
+    #
+    # language_name = models.CharField(
+    #     max_length=2,
+    #     choices=lang_selector,
+    #     blank=True,
+    #     default='ru',
+    #     help_text='Book language',
+    # )
+    name = models.CharField(max_length=200, help_text='Enter a book genre (e.g. Science Fiction)', default='Russian')
 
     class Meta:
         ordering = ['id']
 
     def __str__(self):
         """String for representing the Model object."""
-        return f'{self.id} ({self.language_name})'
-
+        return self.name
 
 class Author(models.Model):
     """Model representing an author."""
