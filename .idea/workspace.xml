@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e2c2282-434a-4470-b416-3f969a905b03" name="Changes" comment="редирект теперь работает, также на сайт можно зайти через локальную сеть">
+    <list default="true" id="8e2c2282-434a-4470-b416-3f969a905b03" name="Changes" comment="убрал бд добавленную вручную, читаю документацию по использованию models">
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0002_remove_mymodelname_id_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0003_rename_mymodelname_books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0004_alter_books_uid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0005_alter_books_pubdate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/pycharm/djangofirst&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/LAZPC/Desktop/PingLog.txt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.customizations"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Django Server.djangofirst">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="djangofirst" />
@@ -129,7 +138,7 @@
       <updated>1669577444233</updated>
       <workItem from="1669577469435" duration="1703000" />
       <workItem from="1669598463888" duration="9629000" />
-      <workItem from="1669705992226" duration="1418000" />
+      <workItem from="1669705992226" duration="3800000" />
     </task>
     <task id="LOCAL-00001" summary="ll">
       <created>1669577533976</created>
@@ -173,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669616465623</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="убрал бд добавленную вручную, читаю документацию по использованию models">
+      <created>1669714690682</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669714690682</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +226,8 @@
     <MESSAGE value="зачем-то довил бд... пошел читать документацию" />
     <MESSAGE value="делаю библиотеку по методичке, сначала настраиваем редирект на catalog" />
     <MESSAGE value="редирект теперь работает, также на сайт можно зайти через локальную сеть" />
-    <option name="LAST_COMMIT_MESSAGE" value="редирект теперь работает, также на сайт можно зайти через локальную сеть" />
+    <MESSAGE value="убрал бд добавленную вручную, читаю документацию по использованию models" />
+    <option name="LAST_COMMIT_MESSAGE" value="убрал бд добавленную вручную, читаю документацию по использованию models" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/django_project$manage.coverage" NAME="manage Coverage Results" MODIFIED="1669615690053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
