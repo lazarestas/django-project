@@ -7,6 +7,9 @@ class Genre(models.Model):
     """Model representing a book genre."""
     name = models.CharField(max_length=200, help_text='Enter a book genre (e.g. Science Fiction)')
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         """String for representing the Model object."""
         return self.name
@@ -20,7 +23,7 @@ class Book(models.Model):
     # Author is a string rather than an object because it hasn't been declared yet in the file
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
 
-    summary = models.TextField(max_length=1000, help_text='Enter a brief description of the book')
+    summary = models.TextField(max_length=100, help_text='Enter a brief description of the book')
     isbn = models.CharField('ISBN', max_length=13, unique=True,
                             help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
 
@@ -31,6 +34,12 @@ class Book(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return self.title
+
+    def display_genre(self):
+        """Create a string for the Genre. This is required to display genre in Admin."""
+        return ', '.join(genre.name for genre in self.genre.all()[:3])
+
+    display_genre.short_description = 'Genre'
 
     def get_absolute_url(self):
         """Returns the URL to access a detail record for this book."""
@@ -59,6 +68,12 @@ class BookInstance(models.Model):
         default='m',
         help_text='Book availability',
     )
+
+    def display_title(self):
+        """Create a string for the Genre. This is required to display genre in Admin."""
+        return self.book.title
+
+    display_title.short_description = 'Title'
 
     class Meta:
         ordering = ['due_back']
@@ -90,7 +105,7 @@ class Language(models.Model):
     #     default='ru',
     #     help_text='Book language',
     # )
-    name = models.CharField(max_length=200, help_text='Enter a book genre (e.g. Science Fiction)', default='Russian')
+    name = models.CharField(max_length=20, help_text='Enter a book language')
 
     class Meta:
         ordering = ['id']
@@ -98,6 +113,7 @@ class Language(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return self.name
+
 
 class Author(models.Model):
     """Model representing an author."""

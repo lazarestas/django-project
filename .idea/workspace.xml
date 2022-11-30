@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e2c2282-434a-4470-b416-3f969a905b03" name="Changes" comment="переписал язык, чтобы можно было добавлять новые и отображался в бд нормально">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad0dd796-2db4-4361-af69-84552bb9d703.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad0dd796-2db4-4361-af69-84552bb9d703.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c496c1f7-4f0f-4738-b617-4d4105bf7cea.xml" beforeDir="false" />
+    <list default="true" id="8e2c2282-434a-4470-b416-3f969a905b03" name="Changes" comment="расширил бд для жанров, теперь 38 самых популярных">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +102,8 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="4321" />
-      <option name="host" value="localhost" />
+      <option name="port" value="55535" />
+      <option name="host" value="192.168.0.104" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -132,7 +133,7 @@
       <workItem from="1669577469435" duration="1703000" />
       <workItem from="1669598463888" duration="9629000" />
       <workItem from="1669705992226" duration="8061000" />
-      <workItem from="1669812642553" duration="295000" />
+      <workItem from="1669812642553" duration="6951000" />
     </task>
     <task id="LOCAL-00001" summary="ll">
       <created>1669577533976</created>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669720532308</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="расширил бд для жанров, теперь 38 самых популярных">
+      <created>1669813226315</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669813226315</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +253,8 @@
     <MESSAGE value="настроил примерную табличку books и добавил туда запись" />
     <MESSAGE value="дальше по гайду создается бд с 5 таблицами, одну таблицу для языков написал сам" />
     <MESSAGE value="переписал язык, чтобы можно было добавлять новые и отображался в бд нормально" />
-    <option name="LAST_COMMIT_MESSAGE" value="переписал язык, чтобы можно было добавлять новые и отображался в бд нормально" />
+    <MESSAGE value="расширил бд для жанров, теперь 38 самых популярных" />
+    <option name="LAST_COMMIT_MESSAGE" value="расширил бд для жанров, теперь 38 самых популярных" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/django_project$manage.coverage" NAME="manage Coverage Results" MODIFIED="1669615690053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
