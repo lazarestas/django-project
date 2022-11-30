@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django import forms
 import uuid
 
 
@@ -23,7 +24,7 @@ class Book(models.Model):
     # Author is a string rather than an object because it hasn't been declared yet in the file
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
 
-    summary = models.TextField(max_length=100, help_text='Enter a brief description of the book')
+    summary = models.TextField(max_length=100, help_text='Enter a brief description of the book', null=True)
     isbn = models.CharField('ISBN', max_length=13, unique=True,
                             help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
 
@@ -44,6 +45,9 @@ class Book(models.Model):
     def get_absolute_url(self):
         """Returns the URL to access a detail record for this book."""
         return reverse('book-detail', args=[str(self.id)])
+
+
+
 
 
 class BookInstance(models.Model):
