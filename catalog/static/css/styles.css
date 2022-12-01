@@ -53,6 +53,7 @@ body{
     align-content: start;
 }
 .content-main{
+    padding: 10px;
     text-align: start;
     grid-area: bottom;
     /*height: inherit;*/
