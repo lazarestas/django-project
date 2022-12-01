@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-from django import forms
 import uuid
 
 
@@ -24,13 +23,16 @@ class Book(models.Model):
     # Author is a string rather than an object because it hasn't been declared yet in the file
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
 
-    summary = models.TextField(max_length=100, help_text='Enter a brief description of the book', null=True)
+    summary = models.TextField(max_length=1000, help_text='Enter a brief description of the book', null=True)
     isbn = models.CharField('ISBN', max_length=13, unique=True,
                             help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
 
     # ManyToManyField used because genre can contain many books. Books can cover many genres.
     # Genre class has already been defined so we can specify the object above.
     genre = models.ManyToManyField(Genre, help_text='Select a genre for this book')
+
+    class Meta:
+        ordering = ['id']
 
     def __str__(self):
         """String for representing the Model object."""
@@ -124,10 +126,10 @@ class Author(models.Model):
     date_of_death = models.DateField('Died', null=True, blank=True)
 
     class Meta:
-        ordering = ['last_name', 'first_name']
+        ordering = ['last_name']
 
     def get_absolute_url(self):
-        """Returns the URL to access a particular author instance."""
+        """Returns the url to access a particular author instance."""
         return reverse('author-detail', args=[str(self.id)])
 
     def __str__(self):

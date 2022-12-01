@@ -1,10 +1,18 @@
-body{
+html, body{
     width: 100%;
+    height: 100%;
     margin: 0;
-    font: 1.2em "Fira Sans", sans-serif;;
-    background: antiquewhite;
+    font: 1.2em "Fira Sans", sans-serif;
+    background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    /*background-color: #D9AFD9;*/
+    /*background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);*/
+
+}
+body{
+    background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 .container-fluid{
+
     display: grid;
     /*border: solid 2px red;*/
     grid-column-gap: 10px;
@@ -14,6 +22,7 @@ body{
     grid-template-columns: 10% 80% 10%;
     /*grid-template-rows: minmax(50px,100%) auto;*/
     grid-template-areas:  "topl header  topr"
+                          "mainl main mainr"
                           "botl bottom botr" ;
     justify-items: stretch;
     align-items: stretch;
@@ -25,10 +34,10 @@ body{
 .main-menu {
     border: solid 2px red;
     /*align-self: start;*/
-    grid-area: botl;
+    grid-area: mainl;
     align-self: start;
-    /*height: 10%;*/
-    /*width: 10%;*/
+    min-width: 115px;
+    min-height: 70px;
     list-style: none;
     background: aqua;
     /*position: fixed;*/
@@ -46,6 +55,9 @@ body{
     background: aquamarine;
     border: solid 2px red;
 }
+.pagination{
+    grid-area: bottom;
+}
 .head-text{
     align-content: center;
 }
@@ -55,7 +67,7 @@ body{
 .content-main{
     padding: 10px;
     text-align: start;
-    grid-area: bottom;
+    grid-area: main;
     /*height: inherit;*/
     /*width: inherit;*/
     background: aquamarine;
