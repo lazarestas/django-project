@@ -46,7 +46,14 @@ body{
     background: aquamarine;
     border: solid 2px red;
 }
+.head-text{
+    align-content: center;
+}
+.main-text{
+    align-content: start;
+}
 .content-main{
+    text-align: start;
     grid-area: bottom;
     /*height: inherit;*/
     /*width: inherit;*/
