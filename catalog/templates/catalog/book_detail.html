@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="{% static '/pictures/house-xxl.png' %}">
 {% endblock %}
 {% block content %}
-<div class="content-head"><h1>{{ book.title }}</h1></div>
+<div class="content-head"><p>{{ book.title }}</p></div>
 <div class="content-main">
     <p><strong>Author:</strong> <a href="">{{ book.author }}</a></p> <!-- author detail link not yet defined -->
     <p><strong>Summary:</strong> {{ book.summary }}</p>

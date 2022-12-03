@@ -18,11 +18,10 @@
 {% endblock %}
 {% block content %}
     <div class="content-head">
-        <h1>Local Library Home</h1>
+        <p>Local Library Home</p>
     </div>
     <div class="content-main">
         <p>Welcome to LocalLibrary, a website developed by <em>Mozilla Developer Network</em>!</p>
-        <h2>Dynamic content</h2>
         <p>The library has the following record counts:</p>
         <ul>
             <li><strong>Books:</strong> {{ num_books }}</li>
@@ -32,5 +31,6 @@
             <li><strong>Genres:</strong> {{ num_genres }}</li>
             <li><strong>Книг со словом война в названии:</strong> {{ num_books_filter }}</li>
         </ul>
+        <p>You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.</p>
     </div>
 {% endblock %}
